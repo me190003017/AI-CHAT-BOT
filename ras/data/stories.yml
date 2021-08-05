@@ -1,0 +1,397 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: thanks
+  - action : utter_thanks
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: bot challange
+  steps:
+  - intent: bot_challange
+  - action: utter_iamabot
+
+
+- story: department happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: departments
+  - action: action_department
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: department sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: departments
+  - action: action_department
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_contact
+
+
+- story: faculty happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faculty
+  - action: action_faculty
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: faculty sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faculty
+  - action: action_faculty
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_contact
+
+- story: alumni happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: alumni
+  - action: action_alumni
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: alumni sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: alumni
+  - action: action_alumni
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_contact
+
+
+- story: about happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: about
+  - action: action_about_iiti
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: about sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: about
+  - action: action_about_iiti
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_contact
+
+- story: fees happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fees
+  - action: action_fee_structure
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: fees sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fees
+  - action: action_fee_structure
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_contact
+
+
+- story: research happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: research
+  - action: action_research
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: research sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: research
+  - action: action_research
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_contact
+
+- story: infrastructure happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: infrastructure
+  - action: action_infrastructure
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: infrastructure sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: infrastructure
+  - action: action_infrastructure
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_contact
+
+
+- story: contact happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: contact
+  - action: action_contact
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: contact sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: contact
+  - action: action_contact
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_contact
+
+- story: location happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: location
+  - action: action_location
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: location sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: location
+  - action: action_location
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_contact
+
+
+- story: placement happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: placement
+  - action: action_placement
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: placement sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: placement
+  - action: action_placement
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_contact
+
+- story: international happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: international
+  - action: action_international_relation
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: international sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: international
+  - action: action_international_relation
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_contact
+
+
+- story: event happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: event
+  - action: action_event
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: event sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: event
+  - action: action_event
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_contact
+
+
+- story: news happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: news
+  - action: action_news
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: news sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: news
+  - action: action_news
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_contact
+
+
+- story: admission happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: admission
+  - action: action_admission
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: admission sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: admission
+  - action: action_admission
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_contact
+
+
+- story: hostel happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: hostel
+  - action: action_hostel
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: hostel sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: hostel
+  - action: action_hostel
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_contact
+
+
+
+- story: sport happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sport
+  - action: action_sport
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sport sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sport
+  - action: action_sport
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_contact
+
+
+- story: medical happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: medical
+  - action: action_medical
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: medical sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: medical
+  - action: action_medical
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_contact
+

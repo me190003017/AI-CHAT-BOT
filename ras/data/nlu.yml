@@ -1,0 +1,363 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hii
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - goodafternoon
+    - vgm
+    - gm
+    - hey buddy
+    - hello guys
+    - hellofriend
+    - hello friend
+
+- intent: departments
+  examples: |
+    - tell me something about courses
+    - tell me something about departments
+    - how many departments are there?
+    - how many courses iit indore offers?
+    - what courses are available at iit indore?
+    - let's talk about departments
+    - let's talk about courses
+    - what about courses?
+    - What specialisations are available at IIT Indore?
+    - what specialisations are available for btech?
+
+- intent: faculty
+  examples: |
+    - tell me about faculties of iiti
+    - tell me about faculties of iit indore
+    - faculties
+    - let's talk about faculities
+    - what about teachers?
+    - how are the teachers
+    - how are the professors?
+    - how many teachers are there?
+    - how many professors are there?
+    - is professors are good at iiti?
+    - is professors are good at iit indore?
+
+- intent: alumni
+  examples: |
+    - let's talk about alumnis
+    - just tell me some famous alumies of iiti
+    - what about alumnies?
+    - some famous students from iiti
+    - how is alumni network of iiti
+    - tell me  about your alumni.
+    - where most of the alumni are working?
+    - how to contact alumnis?
+
+- intent: about
+  examples: |
+    - let's talk about iit indore
+    - let's talk about iiti
+    - tell me something about iit indore
+    - what is iit indore?
+    - what is iiti?
+    - explain iiti
+    - how is iit indore?
+    - which iit is there in indore?
+    - is there any iit in mp?
+    - is there iit in indore?
+
+- intent: fees
+  examples: |
+    - let's talk about fees
+    - how is expenses at iiti??
+    - how expensive study is at iit indore?
+    - what is fees at iiti?
+    - what is fees per year?
+    - What is the course fee of the IIT Indore MTech programme?
+    - what is fee for doing BTech in iit indore?
+    - what is fee per semester?
+    - does iit indore provide scholarships?
+    - what is last date of fees deposit?
+    - what is fees of first year for BTech?
+    - do they take fees in installments?
+    - does iit indore provide any kind of relaxation in their fees?
+    - what will happen if we don't submit fees on time?
+    - do they accept late fees?
+    - how much costly study is at iiti?
+
+- intent: research
+  examples: |
+    - let's talk about research at iiti
+    - what about research at iit indore?
+    - let's talk about research atiiti
+    - what is research situation at iiti?
+    - what are main research areas at iit indore.
+    - how can I also do research at iit indore?
+    - is it beneficial to do research at iit indore?
+    - do they proper machine for their research?
+    - how many research papers have iit indore published?
+    - what are best research that iit indore have done?
+    - do they provide stipend for students while doing their research?
+
+- intent: infrastructure
+  examples: |
+    - let's talk about infrastructure
+    - let's talk about campus
+    - how beautiful campus is at iiti?
+    - how big is iiti?
+    - what is campus situation?
+    - what about campus?
+    - what about infrastructure?
+    - how many buildings do iit indore have?
+    - how many restaurants do iiti have?
+    - does iit indore have library?
+    - how big their library is?
+    - what is size of iit indore?
+
+- intent: contact
+  examples: |
+    - give me contact information
+    - how to contact?
+    - give me links of social media handles of iiti
+    - what is website of iit indore?
+    - how to contact you?
+    - give me details to contact you
+
+- intent: location
+  examples: |
+    - let's talk about location
+    - what is location of iiti?
+    - where is it?
+    - where is iit indore situated?
+    - what is iiti situation on map?
+    - give me complete address of iit Indore? -
+    - give me its location
+
+- intent: placement
+  examples: |
+    - let's talk about placements
+    - tell me about placements
+    - what about placements?
+    - how is package at iit indore?
+    - what is highest package?
+    - is placements are hundred percent?
+    - how many students placed every year?
+    - what about non-cs placements?
+    - what is placements scenario?
+    - what is average package at iiti?
+    - how much iitians earn?
+    - Which companies are the major recruiters of IIT Indore?
+    - How is the placement record of IIT Indore?
+    - What is the highest stipend offered during IIT Indore internship?
+    - What is the highest salary package offered till date in IIT Indore placements?
+    - How are the placements of B.Tech in mechanical engineering from IIT, Indore?
+
+- intent: international
+  examples: |
+    - let's talk about international relations
+    - what is international relations of iit indore?
+    - how many people from other countries have visited iit indore?
+    - where iit indore have participated at international level?
+    - give me iit indore International relations
+    - tell me something about international relations of IIT indore?
+    - does iit indore allow international students in their college?
+    - what is fee of international students?
+    - how many international students does iit indore have?
+    - what are facilities for international students at indore?
+
+- intent: event
+  examples: |
+    - let's talk about events at iiti
+    - tell me about the events at iit indore
+    - what are events that have happened at iit indore?
+    - when the events happen at iit indore?
+    - which stars have participated in iit indore  events?
+    - give me information about events at iit indore?
+    - how can I also participate in iit indore events?
+    - which club organised events at IIT indore?
+    - when next event is going to happen?
+    - what is next date of an event?
+    - which people can take part in events?
+    - do people from outside the college are allowed in events?
+    - do they take charge to take part in events?
+    - how to organise events at iit indore?
+
+- intent: news
+  examples: |
+    - let's talk about news
+    - give me news regarding to IIT indore?
+    - what are iit indore news?
+    - give me latest news of iit indore?
+    - what is happening in iit indore?
+    - news of iit indore
+    - so tell me what is news of iit indore?
+    - is there any official news channel for iit indore?
+    - where I can find news of iit indore?
+    - give me some news sites of iit indore?
+    - give me information about iit indore?
+
+- intent: admission
+  examples: |
+    - let's talk about admission
+    - What is the eligibility criteria for IIT Indore PhD admission?
+    - What is the cutoff for IIT Indore BTech admission?
+    - What specialisations are available for IIT Indore MSc admission?
+    - How can I apply to IIT Indore MTech admission?
+    - What is the selection criteria for IIT Indore PhD admission?
+    - What is the application process at IIT Indore?
+    - what are cutoffs for admission in iiti?
+
+- intent: hostel
+  examples: |
+    - let's talk about hostels
+    - what about hostel facilities?
+    - how many hostels are there at iiti?
+    - how many students in one room?
+    - is there ac in hostel rooms
+    - is there extra charge for hotels
+    - what are hosel rools and ragulations
+    - is iiti hostels are best in all iits
+    - how many students are in one room
+    - do they charge extra money for hostel?
+    - Is it necessary to take hostel?
+    - what if someone don't want to take hostel rooms?
+    - what is condition of hostel rooms?
+
+- intent: sport
+  examples: |
+    - let's talk about sports facilities
+    - what about sports facilities?
+    - is there cricket ground at iiti?
+    - is there football ground at iiti?
+    - is there tenis court?
+    - is there any coach at iiti?
+    - is sports facilities are good?
+    - what is iiti position in inter iit sports
+    - what different types of sports are ghere in iit indore?
+    - how could I participate In sports events?
+    - when sports events held?
+    - do we have regular sports events?
+
+- intent: medical
+  examples: |
+    - let's talk about medical facilities
+    - what about medical facilities?
+    - is there hospital at iiti?
+    - is hospital charge from students or it is free?
+    - where is hospital located in iiti?
+    - what are opening hours for hospital?
+    - what are fees of hospital for students?
+    - can I go hospital for regular checkup?
+    - how many doctors are there in hospital?
+    - does hospital also check for serious cases?
+    - is there ambulance available for 24 hours
+
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+    - thank you so much
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - nice to talk to you
+    - good night
+    - catch you later
+    - gotta go
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - right
+    - ok
+    - absolutely
+
+- intent: deny
+  examples: |
+    - no
+    - not
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - wow
+    - weldone
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - not feeling good
+    - I am depressed
+    - I am mentally disturbed
+
+- intent: bot_challange
+  examples: |
+    - are you a bot?
+    - what is your name?
+    - who are you?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you female or male?
+    - who is your owner?
+    - what is your father name?
+    - what is your mother name?
+    - who is your owner
+    - who is your boss
