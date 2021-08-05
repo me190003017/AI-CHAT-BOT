@@ -29,10 +29,24 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Namaste, How are you ?"
+  - text: |
+     "Hey! How are you?"
+  - text: |
+      "Hi!"
+  - text: |
+      "Hello! How can I help you ?"
+  - text: |
+      "Hi there, I'm listening! How can I help you ?"
+  - text: |
+      "That's me. How can I help you ?"
+  - text: |
+      "Hi. It's good to hear from you, how can I help you ?"
+  - text: |
+      "Namaste, how can I help ? 😄"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up. Where does today come before yesterday? The dictionary"
+
 
   utter_did_that_help:
   - text: "Did that help you?"
@@ -44,10 +58,13 @@ responses:
   - text: "Goodbye :)"
 
   utter_thanks:
-  - text: "Welcome!"
+  - text: "You are Welcome!"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: |
+     "I am a bot assistance, powered by IIT Indore"
+  - text: |
+     "I am not human , but a bot assistance, powered by IIT Indore"
 
 actions:
   - utter_greet

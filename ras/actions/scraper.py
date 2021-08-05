@@ -81,7 +81,7 @@ def faculty():
     faculties_urls=['http://people.iiti.ac.in/~astro/beta_astro/?page_id=24','http://bsbe.iiti.ac.in/faculty.php','http://chemistry.iiti.ac.in/faculty.html','http://ce.iiti.ac.in/faculty.php','http://cse.iiti.ac.in/faculty.php','http://ee.iiti.ac.in/faculty.html','http://hss.iiti.ac.in/main/faculty','http://math.iiti.ac.in/teachers.html','http://people.iiti.ac.in/~meiiti/index.php/http-people-iiti-ac-in-meiiti-index-php-dr-sandeep-singh-2/','http://mems.iiti.ac.in/Faculty.html','http://physics.iiti.ac.in/faculty.html']
     # print("Here is list of urls that refers to a page of faculties of that department\n")
     for faculty,department in zip(faculties_urls,department_names):
-        a_tag=f'<a href="{faculty}" target="_blank">{department}</a>'
+        a_tag=f'<a href="{faculty}" target="_blank">Faculity of {department}</a>'
         faculty_list.append(a_tag)
         # print(a_tag)
     return faculty_list
@@ -118,9 +118,8 @@ def about_iiti():
     # print(a_tag3)
     ans=""
     ans+=(doc.find_all('p')[6].text)+'\n\n'
-    ans+="For more Info "+a_tag+'\n'
-    ans+="\t\t\t\tOr\n"
-    ans+=a_tag2+'\n'
+    ans+="For more Info "+a_tag+'\n\n'
+    ans+=a_tag2+'\n\n'
     ans+=a_tag3+'\n'
     return ans
 # about_iiti()  
@@ -161,7 +160,7 @@ def research():
     # print('Patents : '+str(num_patents)+'\n')
     result=doc.findAll('p')[0].text.strip()[:409]+"\n\n"
     result+="To Visit official website of R&D Department of IIT Indore "+a_tag+'\n'
-    result+='\nFacts\n'
+    result+='\nFacts - \n\n'
     result+= 'Publications : '+str(num_publications)+'\n'+'Projects : '+str(num_projects)+'\n'+'Patents : '+str(num_patents)+'\n'
     return result
     
@@ -183,9 +182,9 @@ def infrastructure():
     
     a_tag2=f'<a href="{campus_tour}" target="_blank">{"Click Here"}</a>'
     # print("Here is the link of youtube video of Campus Tour, to watch "+a_tag2)
-    result=doc.findAll('div',{'class':'info_text'})[0].text.strip()[:429]+"\n"
+    result=doc.findAll('div',{'class':'info_text'})[0].text.strip()[:429]+"\n\n"
     
-    result+="To Visit Official Website of Infrastructure Development Department of IIT Indore "+a_tag1+"\n"
+    result+="To Visit Official Website of Infrastructure Development Department of IIT Indore "+a_tag1+"\n\n"
 
     result+="Here is the link of youtube video of Campus Tour, to watch "+a_tag2+'\n'
     
@@ -210,10 +209,10 @@ def contact():
     # print(a_tag3)
     a_tag4=f'<a href="{iiti_twitter}" target="_blank">{"Twitter"}</a>'
     # print(a_tag4)
-    result="Here are some links of social media pages of IIT Indore\n"
-    result+="IIT Indore on "+a_tag1+'\n'
-    result+="IIT Indore on "+a_tag2+'\n'
-    result+="IIT Indore on "+a_tag3+'\n'
+    result="Here are some links of social media pages of IIT Indore\n\n"
+    result+="IIT Indore on "+a_tag1+'\n\n'
+    result+="IIT Indore on "+a_tag2+'\n\n'
+    result+="IIT Indore on "+a_tag3+'\n\n'
     result+="IIT Indore on "+a_tag4+'\n'
     return result
 # contact()  
@@ -238,11 +237,11 @@ def location():
     # print(doc.findAll('div',{'class':'widget'})[0].text.strip()[58:78])
     # print(doc.findAll('div',{'class':'widget'})[0].text.strip()[80:86])
     # print(doc.findAll('div',{'class':'widget'})[0].text.strip()[92:])
-    result=location_of_iiti+"\n "
-    result+=a_tag+'\n'
-    result+=doc.findAll('div',{'class':'widget'})[0].text.strip()[15:52]+'\n'
-    result+=doc.findAll('div',{'class':'widget'})[0].text.strip()[58:78]+'\n'
-    result+=doc.findAll('div',{'class':'widget'})[0].text.strip()[80:86]+'\n'
+    result=location_of_iiti+"\n\n "
+    result+=a_tag+'\n\n'
+    result+=doc.findAll('div',{'class':'widget'})[0].text.strip()[15:52]+'\n\n'
+    result+=doc.findAll('div',{'class':'widget'})[0].text.strip()[58:78]+'\n\n'
+    result+=doc.findAll('div',{'class':'widget'})[0].text.strip()[80:86]+'\n\n'
     result+=doc.findAll('div',{'class':'widget'})[0].text.strip()[92:]+'\n'
     return result
 # location()
@@ -266,9 +265,9 @@ def placements():
     # print("Or to visit Official Website of Placement Office of IIT Indore "+a_tag1)
     a_tag2=f'<a href="{placement_pdf}" target="_blank">{"Click Here"}</a>'
     # print("Or you can download Placement Brochure of IIT Indore "+a_tag2)
-    result=a_tag+" to know placements statics of IIT Indore\n"
-    result+="Or to visit Official Website of Placement Office of IIT Indore "+a_tag1+'\n'
-    result+="Or you can download Placement Brochure of IIT Indore "+a_tag2+'\n'
+    result=a_tag+" to know placements statics of IIT Indore\n\n"
+    result+="Or to visit Official Website of Placement Office of IIT Indore "+a_tag1+'\n\n'
+    result+="To download Placement Brochure of IIT Indore "+a_tag2+'\n'
     return result
 # placements()
 
@@ -285,7 +284,7 @@ def international_relations():
     
     a_tag1=f'<a href="{url}" target="_blank">{"Click Here"}</a>'
     # print("To visit Official Website of Department of International Affairs  of IIT Indore "+a_tag1)
-    result=return_obj+'\n'
+    result=return_obj+'\n\n'
     result+="To visit Official Website of Department of International Affairs  of IIT Indore "+a_tag1+'\n'
     return result
 
@@ -342,8 +341,8 @@ def hostels():
     # print(a_tag1+" to know everything about Hostels at IIT Indore")
     a_tag2=f'<a href="{video_url}" target="_blank">{"Click Here"}</a>'
     # print("or "+a_tag2+" to watch related video")
-    result=a_tag1+" to know everything about Hostels at IIT Indore\n"
-    result+="Or "+a_tag2+" to watch related video"
+    result=a_tag1+" to know everything about Hostels at IIT Indore\n\n"
+    result+="Or "+a_tag2+" to watch Tour of IIT Indore hostels"
     return result 
 
 
@@ -358,8 +357,8 @@ def sports():
     # print(a_tag1+" to all about Sports Facilities at IIT Indore")
     a_tag2=f'<a href="{sports_url}" target="_blank">{"Click Here"}</a>'
     # print("or "+a_tag2+" to watch related video")
-    result=a_tag1+" to know all about Sports Facilities at IIT Indore\n"
-    result+="or "+a_tag2+" to watch related video"
+    result=a_tag1+" to know all about Sports Facilities at IIT Indore\n\n"
+    result+="or "+a_tag2+" to watch related video\n"
     return result 
 
 # sports()
@@ -372,7 +371,7 @@ def medical():
     # print(a_tag1+" to all about Medical Facilities at IIT Indore")
     a_tag2=f'<a href="{medical_url}" target="_blank">{"Click Here"}</a>'
     # print("or "+a_tag2+" to watch related video")
-    result=a_tag1+" to know all about Medical Facilities at IIT Indore"+'\n'
+    result=a_tag1+" to know all about Medical Facilities at IIT Indore"+'\n\n'
     result+="or "+a_tag2+" to watch related video"
     return result 
 

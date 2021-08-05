@@ -74,10 +74,10 @@ class Action1(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        departments=departments()
-        ans="Here is list of all departments : \n"
-        for a in departments:
-            ans=ans+a+'\n'
+        department=departments()
+        ans="List of All Courses that IIT Indore Offer : \n\n"
+        for a in department:
+            ans=ans+a+'\n\n'
         dispatcher.utter_message(text=ans)
 
         return []
@@ -91,9 +91,9 @@ class Action2(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         faculties=faculty()
-        ans=""
+        ans="List of all links of pages of department wise  faculities : \n\n"
         for a in faculties:
-            ans=ans+a+'\n'
+            ans=ans+a+'\n\n'
         dispatcher.utter_message(text=ans)
 
         return []

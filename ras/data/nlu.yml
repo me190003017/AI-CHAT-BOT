@@ -37,6 +37,7 @@ nlu:
     - what about courses?
     - What specialisations are available at IIT Indore?
     - what specialisations are available for btech?
+    - which courses iiti offer
 
 - intent: faculty
   examples: |
@@ -94,7 +95,9 @@ nlu:
     - what will happen if we don't submit fees on time?
     - do they accept late fees?
     - how much costly study is at iiti?
-
+    - what is hostel fees
+    - is food is free
+    
 - intent: research
   examples: |
     - let's talk about research at iiti
@@ -132,6 +135,9 @@ nlu:
     - what is website of iit indore?
     - how to contact you?
     - give me details to contact you
+    - iiti on instagram
+    - iiti on linkedin
+    - iiti on facebook
 
 - intent: location
   examples: |
@@ -174,6 +180,7 @@ nlu:
     - what is fee of international students?
     - how many international students does iit indore have?
     - what are facilities for international students at indore?
+    - relation with foreign universities 
 
 - intent: event
   examples: |
