@@ -24,6 +24,7 @@ nlu:
     - hello guys
     - hellofriend
     - hello friend
+    - how are you
 
 - intent: departments
   examples: |
@@ -137,6 +138,8 @@ nlu:
     - give me details to contact you
     - iiti on instagram
     - iiti on linkedin
+    - iiti on twitter
+    - iiti on twiter
     - iiti on facebook
 
 - intent: location
@@ -314,6 +317,7 @@ nlu:
     - don't like that
     - no way
     - not really
+    - I didnot like it
 
 - intent: mood_great
   examples: |

@@ -93,7 +93,7 @@ def alumni():
     url = 'https://alumni.iiti.ac.in'
     a = 'Please visit '
     a+='<a href="{}">https://alumni.iiti.ac.in</a>\n'.format(url)
-    b = ' for more updates on Alumni'
+    b = ' To know all about Alumnis of IIT Indore  '
     return a+b
 # get_alumni()
 
@@ -182,7 +182,9 @@ def infrastructure():
     
     a_tag2=f'<a href="{campus_tour}" target="_blank">{"Click Here"}</a>'
     # print("Here is the link of youtube video of Campus Tour, to watch "+a_tag2)
-    result=doc.findAll('div',{'class':'info_text'})[0].text.strip()[:429]+"\n\n"
+    
+    result=    result='<img src="http://iiti.ac.in/images/gallery/campus/32.jpg" style="width: 100%;border-radius: 11px;">' + "\n\n"
+    result+=doc.findAll('div',{'class':'info_text'})[0].text.strip()[:429]+"\n\n"
     
     result+="To Visit Official Website of Infrastructure Development Department of IIT Indore "+a_tag1+"\n\n"
 
@@ -209,7 +211,7 @@ def contact():
     # print(a_tag3)
     a_tag4=f'<a href="{iiti_twitter}" target="_blank">{"Twitter"}</a>'
     # print(a_tag4)
-    result="Here are some links of social media pages of IIT Indore\n\n"
+    result="Here are  links of social media pages of IIT Indore, Here you can contact us\n\n"
     result+="IIT Indore on "+a_tag1+'\n\n'
     result+="IIT Indore on "+a_tag2+'\n\n'
     result+="IIT Indore on "+a_tag3+'\n\n'
@@ -298,6 +300,8 @@ def Events():
     url="https://iiti.ac.in/event"
     a_tag1=f'<a href="{url}" target="_blank">{"Click Here"}</a>'
     # print(a_tag1+" to know all about events at IIT Indore")   
+    result='<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8HP-7hxSzO1KfQ8lKC2EgyPvWrgxBiewKlQ&usqp=CAU" style="width: 100%;border-radius: 11px;">'+"\n\n"
+    
     result=a_tag1+" to know everything about Events at IIT Indore"
     return result
 
@@ -341,7 +345,8 @@ def hostels():
     # print(a_tag1+" to know everything about Hostels at IIT Indore")
     a_tag2=f'<a href="{video_url}" target="_blank">{"Click Here"}</a>'
     # print("or "+a_tag2+" to watch related video")
-    result=a_tag1+" to know everything about Hostels at IIT Indore\n\n"
+    result='<img src="https://lh3.googleusercontent.com/proxy/gJ1XQVZp1S3esdhBSJ3xF9t-o0XxmdYKy5ifP3Qn01VTfY99WPWz0QmUj019KDDcUIWIKFqQF_7bb6Y-ukUNwmL__tqR-XzhjN4" style="width: 100%;border-radius: 11px;">'+"\n\n"
+    result+=a_tag1+" to know everything about Hostels at IIT Indore\n\n"
     result+="Or "+a_tag2+" to watch Tour of IIT Indore hostels"
     return result 
 
@@ -357,8 +362,9 @@ def sports():
     # print(a_tag1+" to all about Sports Facilities at IIT Indore")
     a_tag2=f'<a href="{sports_url}" target="_blank">{"Click Here"}</a>'
     # print("or "+a_tag2+" to watch related video")
-    result=a_tag1+" to know all about Sports Facilities at IIT Indore\n\n"
-    result+="or "+a_tag2+" to watch related video\n"
+    result='<img src="https://i.ytimg.com/vi/ICpW0CwhRU4/maxresdefault.jpg" style="width: 100%;border-radius: 11px;">'+"\n\n"
+    result+=a_tag1+" to know all about Sports Facilities at IIT Indore\n\n"
+    result+="or "+a_tag2+" to watch sports facilities\n"
     return result 
 
 # sports()
@@ -371,10 +377,32 @@ def medical():
     # print(a_tag1+" to all about Medical Facilities at IIT Indore")
     a_tag2=f'<a href="{medical_url}" target="_blank">{"Click Here"}</a>'
     # print("or "+a_tag2+" to watch related video")
-    result=a_tag1+" to know all about Medical Facilities at IIT Indore"+'\n\n'
-    result+="or "+a_tag2+" to watch related video"
+    result='<img src="https://pbs.twimg.com/media/EJVe_2UU8AEfZ3r.jpg" style="width: 100%;border-radius: 11px;">' + "\n\n"
+    result+=a_tag1+" to know all about Medical Facilities at IIT Indore"+'\n\n'
+    result+="or "+a_tag2+" to watch hospital tour video"
     return result 
 
 # medical()
 
 # In[23]
+
+def mood_sad():
+    iiti_linkedin='https://www.linkedin.com/school/iit-indore/'
+    iiti_insta='https://www.instagram.com/iitindoreofficial/'
+    iiti_facebook='https://www.facebook.com/IIT-Indore-108781240868622/'
+    iiti_twitter='https://twitter.com/IITIOfficial'
+    # print("Here are some links of social media pages of IIT Indore\n")
+    a_tag1=f'<a href="{iiti_linkedin}" target="_blank">{"Linkedin"}</a>'
+    # print(a_tag1)
+    a_tag2=f'<a href="{iiti_insta}" target="_blank">{"Instagram"}</a>'
+    # print(a_tag2)
+    a_tag3=f'<a href="{iiti_facebook}" target="_blank">{"Facebook"}</a>'
+    # print(a_tag3)
+    a_tag4=f'<a href="{iiti_twitter}" target="_blank">{"Twitter"}</a>'
+    # print(a_tag4)
+    result="Oh you are not satisfied with my response then please check our social media handles\n\n"
+    result+="IIT Indore on "+a_tag1+'\n\n'
+    result+="IIT Indore on "+a_tag2+'\n\n'
+    result+="IIT Indore on "+a_tag3+'\n\n'
+    result+="IIT Indore on "+a_tag4+'\n'
+    return result

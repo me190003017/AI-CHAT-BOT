@@ -51,7 +51,7 @@ from .scraper import admission
 from .scraper import hostels
 from .scraper import sports
 from .scraper import medical
-
+from .scraper import mood_sad
 #
 # class ActionHelloWorld(Action):
 
@@ -312,6 +312,19 @@ class Action17(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         ans=medical()
+       
+        dispatcher.utter_message(text=ans)
+
+        return []
+
+class Action18(Action):
+    def name(self) -> Text:
+        return "action_mood_sad"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        ans=mood_sad()
        
         dispatcher.utter_message(text=ans)
 

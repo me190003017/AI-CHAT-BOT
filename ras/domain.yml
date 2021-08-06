@@ -48,6 +48,7 @@ responses:
   - text: "Here is something to cheer you up. Where does today come before yesterday? The dictionary"
 
 
+
   utter_did_that_help:
   - text: "Did that help you?"
 
@@ -114,6 +115,8 @@ actions:
   - action_sport
 
   - action_medical
+
+  - action_mood_sad
 
 
 
