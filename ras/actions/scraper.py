@@ -302,7 +302,7 @@ def Events():
     # print(a_tag1+" to know all about events at IIT Indore")   
     result='<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8HP-7hxSzO1KfQ8lKC2EgyPvWrgxBiewKlQ&usqp=CAU" style="width: 100%;border-radius: 11px;">'+"\n\n"
     
-    result=a_tag1+" to know everything about Events at IIT Indore"
+    result+=a_tag1+" to know everything about Events at IIT Indore"
     return result
 
 # Events()
