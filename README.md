@@ -8,6 +8,7 @@ This chat bot give answer to any general questions related to IIT Indore. This c
 
 These are simple steps to run this chat bot
 - First create anaconda enviornment
+     - To create type `conda create -n rasa python=3.6 anaconda` 
 - Open anaconda powershell 
      - type command `conda activate rasa`
      - type `rasa run -m models --enable-api --cors "*" --debug`
